@@ -9,7 +9,7 @@
 	"extra": {
 			"class": "Stanleyxc\\ComposerExtra\\DeploymentPlugin",
 			"branch-alias": {
-					"dev-master": "0.1"
+					"dev-master": "v0.1-dev"
 			}
 	},
 	"autoload" : {

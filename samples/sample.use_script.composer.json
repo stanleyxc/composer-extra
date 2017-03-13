@@ -19,7 +19,7 @@
     {
        "psr-4" :
        {
-         "Stanleyxc\\ComposerExtra\\" : "vendor/stanleyxcnx/composer-extra/src/"
+         "Stanleyxc\\ComposerExtra\\" : "vendor/stanleyxc/composer-extra/src/"
        }
      },
     "scripts":

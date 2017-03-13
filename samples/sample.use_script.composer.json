@@ -1,0 +1,33 @@
+{
+    "require":
+    {
+      "phpmailer/phpmailer" 	: "~5.2",
+      "twig/twig"			  	: "~1.24",
+      "monolog/monolog"   : "1.17.*",
+      "stanleyxc/composer-extra" : "dev-master"
+    },
+    "extra":
+    {
+      "deployment":
+      {
+        "phpmailer/phpmailer" 	: ["*.php", "extras", "LICENSE", "VERSION"],
+        "twig/twig"		          : ["LICENSE", "lib", "doc", "ext"],
+      	"psr/log"               : ["LICENSE", "composer.json", "Psr/Log/*.php" ]
+	    }
+    },
+    "autoload" :
+    {
+       "psr-4" :
+       {
+         "Stanleyxc\\ComposerExtra\\" : "vendor/stanleyxcnx/composer-extra/src/"
+       }
+     },
+    "scripts":
+    {
+       "script:deploy" :
+       [
+          "Stanleyxc\\ComposerExtra\\Script::main"
+       ]
+    }
+
+}

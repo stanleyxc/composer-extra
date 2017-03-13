@@ -1,0 +1,18 @@
+{
+	"name" : "stanleyxc/composer-extra",
+	"type" : "composer-plugin",
+	"require": {
+			"php": "^5.3 || ^7.0",
+			"composer-plugin-api":	"^1.0"
+	},
+	"description": "Like make clean.  A simple package cleaner for  deployment.",
+	"extra": {
+			"class": "Stanleyxc\\ComposerExtra\\DeploymentPlugin",
+			"branch-alias": {
+					"dev-master": "0.1"
+			}
+	},
+	"autoload" : {
+		"psr-4" : {"Stanleyxc\\ComposerExtra\\": "src/"}
+	}
+}
